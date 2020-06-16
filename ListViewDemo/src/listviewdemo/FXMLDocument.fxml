@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="listviewdemo.FXMLDocumentController">
+   <children>
+      <ListView fx:id="listView" layoutX="14.0" layoutY="28.0" onMouseClicked="#listView" prefHeight="296.0" prefWidth="200.0" />
+      <TextField fx:id="textField" layoutX="270.0" layoutY="120.0" prefHeight="30.0" prefWidth="284.0" />
+      <Button layoutX="359.0" layoutY="166.0" mnemonicParsing="false" onAction="#addButtonAction" prefHeight="25.0" prefWidth="70.0" text="Add" AnchorPane.bottomAnchor="209.0" AnchorPane.leftAnchor="359.0" AnchorPane.rightAnchor="171.0" AnchorPane.topAnchor="166.0" />
+      <Label layoutX="270.0" layoutY="85.0" prefHeight="25.0" prefWidth="177.0" text="Enter a fruit" />
+      <Label fx:id="label" alignment="TOP_CENTER" layoutX="259.0" layoutY="207.0" prefHeight="178.0" prefWidth="274.0" />
+      <Button layoutX="71.0" layoutY="343.0" mnemonicParsing="false" onAction="#deleteButtonAction" prefHeight="25.0" prefWidth="70.0" text="Delete" />
+   </children>
+</AnchorPane>

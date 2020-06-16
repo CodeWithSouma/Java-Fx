@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="728.0" style="-fx-background-color: #F8F9F9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentmanagement.MainUIController">
+   <left>
+      <VBox prefHeight="375.0" prefWidth="125.0" spacing="10.0" style="-fx-background-color: #F2F3F4;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addStudent" prefHeight="35.0" prefWidth="125.0" style="-fx-background-color: #4A235A;" text="Add Student" textFill="WHITE">
+               <font>
+                  <Font name="Meiryo UI" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#showAll" prefHeight="35.0" prefWidth="136.0" style="-fx-background-color: #4A235A;" text="Show All" textFill="WHITE">
+               <font>
+                  <Font name="Meiryo UI" size="13.0" />
+               </font>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="2.0" right="2.0" top="10.0" />
+         </padding>
+      </VBox>
+   </left>
+   <top>
+      <VBox alignment="CENTER" prefHeight="84.0" prefWidth="694.0" style="-fx-background-color: #4A235A;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Student management system" textFill="#f8f9f9">
+               <font>
+                  <Font name="Meiryo UI" size="31.0" />
+               </font>
+            </Label>
+            <Label text="education is the backbone of the nation" textFill="#f8f9f9">
+               <font>
+                  <Font name="Meiryo UI" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox fx:id="mainContent" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #F8F9F9;" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
